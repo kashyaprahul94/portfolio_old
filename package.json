@@ -15,7 +15,7 @@
   },
   "homepage": "https://kashyaprahul94.github.io/portfolio",
   "scripts": {
-    "prepare": "yarn run build",
+    "predeploy": "yarn build",
     "deploy": "yarn gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
