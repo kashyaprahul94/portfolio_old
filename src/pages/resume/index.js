@@ -1,15 +1,3 @@
-import React, { Component } from "react";
+import Resume from "./resume";
 
-import "./resume.scss";
-
-import { Button } from "components/button";
-
-export default class extends Component {
-  render() {
-    return (
-      <div id="Resume">
-        <Button>Hello</Button>
-      </div>
-    );
-  }
-}
+export default Resume;

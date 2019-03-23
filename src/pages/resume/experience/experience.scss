@@ -1,0 +1,57 @@
+$logo_size: 64px;
+
+.experience {
+  .experience-item {
+    margin-bottom: 10px;
+
+    .experience-item--logo {
+      width: $logo_size;
+      height: $logo_size;
+      position: relative;
+
+      padding: 5px;
+      img {
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+
+    .experience-item--content {
+      padding-left: 20px;
+      font-family: "Dosis", sans-serif;
+
+      .experience-item--employer {
+        & > p {
+          margin: 0;
+        }
+
+        .employer-name {
+          font-weight: 700;
+        }
+        .employer-location {
+          font-size: 90%;
+          font-style: italic;
+          color: #555;
+        }
+      }
+      .experience-item--employer-duration {
+        margin-top: 5px;
+        color: #333;
+        & > p {
+          margin: 0;
+        }
+      }
+    }
+
+    .experience-item--description {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: "PT Sans Narrow", sans-serif;
+    }
+  }
+}
