@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import Home from "./pages/home";
+import Resume from "pages/resume";
 
 export default class extends Component {
   render() {
     return (
-      <div className="app">
-        <Home />
+      <div className="wrapper">
+        <Resume />
       </div>
     );
   }

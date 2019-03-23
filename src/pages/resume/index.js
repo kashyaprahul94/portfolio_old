@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
-import Home from "./pages/home";
+import "./resume.scss";
+
+import { Button } from "components/button";
 
 export default class extends Component {
   render() {
     return (
-      <div className="app">
-        <Home />
+      <div id="Resume">
+        <Button>Hello</Button>
       </div>
     );
   }
