@@ -1,0 +1,38 @@
+{
+  "name": "@kashyaprahul94/portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "license": "ISC",
+  "private": true,
+  "author": "kashyaprahul94@gmail.com",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashyaprahul94/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kashyaprahul94/portfolio/issues"
+  },
+  "homepage": "https://github.com/kashyaprahul94/portfolio",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-scripts": "2.1.8"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
