@@ -1,0 +1,45 @@
+@import "../../../styles/colors";
+
+.section-skills {
+  .skill-items {
+    margin-top: 20px;
+
+    .skill-item {
+      margin-bottom: 20px;
+
+      .skill-item--group {
+        font-family: "Roboto Slab", sans-serif !important;
+
+        .skill-item--category {
+          margin: 0;
+          font-weight: 900;
+          font-size: 16px;
+        }
+        .skill-item--description {
+          margin: 0;
+          margin-top: 3px;
+          font-weight: 100;
+          font-size: 14px;
+          text-align: justify;
+          color: #5d5e5e;
+        }
+      }
+    }
+    .skill-progressbar {
+      padding: 0 5px;
+      height: 10px;
+      border: 1px solid #ddd;
+      background: #abb0b3;
+      position: relative;
+
+      .skill-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: $teal;
+      }
+    }
+  }
+}

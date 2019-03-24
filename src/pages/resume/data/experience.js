@@ -44,11 +44,11 @@ const init = () => {
       logo: logoWF
     })
   );
+
+  return experiences;
 };
 
-init();
-
 //
 //
 //
-export default () => experiences;
+export default () => init();

@@ -13,11 +13,13 @@ import { Sheet } from "components/sheet";
 import personalData from "./data/personal";
 import experienceData from "./data/experience";
 import educationData from "./data/education";
+import skillsData from "./data/skills";
 
 //
 import Header from "./header";
 import Experience from "./experience";
 import Education from "./education";
+import Skills from "./skills";
 
 //
 //
@@ -27,6 +29,7 @@ export default class extends Component {
     this.personalData = personalData();
     this.experiences = experienceData();
     this.educations = educationData();
+    this.skills = skillsData();
   }
   componentDidMount() {}
   render() {
@@ -44,7 +47,9 @@ export default class extends Component {
                 <Experience data={this.experiences} />
                 <Education data={this.educations} />
               </Col>
-              <Col xs={7} />
+              <Col xs={7}>
+                <Skills data={this.skills} />
+              </Col>
             </Row>
           </Grid>
         </Sheet>

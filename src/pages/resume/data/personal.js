@@ -34,8 +34,6 @@ class PersonalInfo {
 let infoIndiaBangalore = {}; //eslint-disable-line no-unused-vars
 let infoGermanyBerlin = {};
 
-let current = {};
-
 const init = () => {
   const commonInfo = {
     firstName: "Rahul",
@@ -60,12 +58,10 @@ const init = () => {
     mobile: "+49 1521 0579203"
   });
 
-  current = infoGermanyBerlin;
+  return infoGermanyBerlin;
 };
 
-init();
-
 //
 //
 //
-export default () => current;
+export default () => init();

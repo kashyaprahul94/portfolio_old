@@ -15,8 +15,10 @@ $logo_size: 64px;
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 10px;
         margin: auto;
+        filter: grayscale(100%);
+        width: 80%;
       }
     }
 

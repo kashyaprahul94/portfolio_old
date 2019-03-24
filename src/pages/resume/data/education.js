@@ -64,11 +64,11 @@ const init = () => {
       score: "9.23 / 10 CGPA"
     })
   );
+
+  return educations;
 };
 
-init();
-
 //
 //
 //
-export default () => educations;
+export default () => init();

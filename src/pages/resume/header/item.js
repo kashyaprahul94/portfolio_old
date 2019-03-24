@@ -105,7 +105,7 @@ const Content = ({ data }) => {
   );
 };
 
-const PersonalInfo = ({ data }) => {
+const PersonalInfoItems = ({ data }) => {
   return (
     <Grid fluid>
       <Row middle="xs">
@@ -123,7 +123,7 @@ const PersonalInfo = ({ data }) => {
 export default ({ data }) => {
   return (
     <div className="header-item">
-      <PersonalInfo data={data} />
+      <PersonalInfoItems data={data} />
     </div>
   );
 };

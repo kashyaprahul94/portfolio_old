@@ -6,9 +6,11 @@ export class Card extends Component {
   render() {
     return (
       <div className={"card" + (this.props.padding ? " card-padding" : "")}>
-        <header className="card-title">
-          <h3>{this.props.title}</h3>
-        </header>
+        {this.props.title && (
+          <header className="card-title">
+            <h3>{this.props.title}</h3>
+          </header>
+        )}
         <div className="card-content">{this.props.children}</div>
       </div>
     );
