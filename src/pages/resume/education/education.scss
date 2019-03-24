@@ -1,10 +1,73 @@
+@import "../../../styles/colors";
+
 .education {
+  p {
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+  }
+
   .education-item {
     margin-bottom: 10px;
 
-    .education-item--content {
-      padding-left: 20px;
-      font-family: "Dosis", sans-serif;
+    .education-item--title {
+      font-size: 18px;
+      font-weight: 900;
+      margin: 0;
+      padding-bottom: 2px;
+    }
+
+    .education-item--institute {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+
+    .education-item--details {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      padding-bottom: 5px;
+      font-style: italic;
+      color: #555;
+
+      p {
+        font-family: "Roboto", sans-serif !important;
+      }
+
+      .education-item--duration {
+        text-align: left;
+      }
+
+      .education-item--location {
+        text-align: right;
+      }
+    }
+
+    .education-item--score {
+      margin: 3px 0;
+      font-family: "Roboto", sans-serif !important;
+      font-size: 15px;
+      .icon {
+        padding-right: 10px;
+        color: $teal;
+      }
+    }
+
+    .education-item--achievements {
+      .education-item--achievement {
+        margin: 3px 0;
+        font-family: "Roboto", sans-serif !important;
+        font-size: 15px;
+        .icon {
+          padding-right: 10px;
+          color: $teal;
+        }
+      }
+    }
+
+    &:first-child {
+      margin-top: 20px;
     }
   }
 }

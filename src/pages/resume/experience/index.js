@@ -8,12 +8,14 @@ import Experience from "./item";
 
 export default ({ data }) => {
   return (
-    <div className="experience">
+    <section className="section-experience">
       <Card title="Experience">
         {data.map(experience => (
-          <Experience key={experience.id} experience={experience} />
+          <div className="experience" key={experience.id}>
+            <Experience experience={experience} />
+          </div>
         ))}
       </Card>
-    </div>
+    </section>
   );
 };

@@ -8,12 +8,14 @@ import Education from "./item";
 
 export default ({ data }) => {
   return (
-    <div className="Education">
-      <Card title="education">
+    <section className="section-education">
+      <Card title="Education">
         {data.map(education => (
-          <Education key={education.id} education={education} />
+          <div className="education" key={education.id}>
+            <Education education={education} />
+          </div>
         ))}
       </Card>
-    </div>
+    </section>
   );
 };

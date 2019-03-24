@@ -1,7 +1,7 @@
 import MD5 from "md5";
 
-import logoSAP from "./logos/sap.png";
-import logoWF from "./logos/wf.png";
+import logoSAP from "./images/sap.png";
+import logoWF from "./images/wf.png";
 
 class Experience {
   constructor({ company, city, country, from, to = null, description, logo }) {

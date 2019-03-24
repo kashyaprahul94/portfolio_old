@@ -5,7 +5,7 @@ import "./card.scss";
 export class Card extends Component {
   render() {
     return (
-      <div className="card">
+      <div className={"card" + (this.props.padding ? " card-padding" : "")}>
         <header className="card-title">
           <h3>{this.props.title}</h3>
         </header>

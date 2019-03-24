@@ -3,7 +3,7 @@ import MD5 from "md5";
 class Education {
   constructor({
     title,
-    insitute,
+    institute,
     city,
     country,
     from,
@@ -12,18 +12,23 @@ class Education {
     achievements = []
   }) {
     this.title = title;
-    this.insitute = insitute;
+    this.institute = institute;
     this.city = city;
     this.country = country;
     this.from = from;
     this.to = to || "Present";
     this.score = score;
-    this.achievements = achievements;
+    this.achievements = achievements.map(achievement => {
+      return {
+        id: MD5(achievement),
+        description: achievement
+      };
+    });
 
     this.id = MD5(
       [
         this.title,
-        this.insitute,
+        this.institute,
         this.city,
         this.country,
         this.from,
@@ -39,7 +44,7 @@ const init = () => {
   educations.unshift(
     new Education({
       title: "Bachelor of Computer Applications",
-      insitute: "Guru Gobind Singh Indraprastha University",
+      institute: "Guru Gobind Singh Indraprastha University",
       city: "Delhi",
       country: "India",
       from: 2011,
@@ -51,7 +56,7 @@ const init = () => {
   educations.unshift(
     new Education({
       title: "Master of Technology",
-      insitute: "Birla Insitute of Technology & Science",
+      institute: "Birla Institute of Technology & Science",
       city: "Bangalore",
       country: "India",
       from: 2014,

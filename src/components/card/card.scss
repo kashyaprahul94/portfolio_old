@@ -1,7 +1,6 @@
 @import "../styles/colors";
 
 .card {
-  padding: 8px;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-bottom: 15px;
@@ -15,11 +14,19 @@
       color: $teal;
       text-transform: uppercase;
       font-family: "Dosis", sans-serif;
+      padding: 8px;
       padding-bottom: 10px;
       border-bottom: 1px solid #ddd;
     }
   }
 
   & > .card-content {
+    padding: 0;
+  }
+
+  &.card-padding {
+    .card-content {
+      padding: 8px;
+    }
   }
 }
