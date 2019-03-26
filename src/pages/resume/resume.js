@@ -19,7 +19,7 @@ import skillsData from "./data/skills";
 import Header from "./header";
 import Experience from "./experience";
 import Education from "./education";
-import Skills from "./skills";
+import { TechnicalSkills, SkillsShowroom } from "./skills";
 
 //
 //
@@ -42,13 +42,14 @@ export default class extends Component {
                 <Header data={this.personalData} />
               </Col>
             </Row>
-            <Row>
+            <Row middle="xs">
               <Col xs={5}>
                 <Experience data={this.experiences} />
                 <Education data={this.educations} />
               </Col>
               <Col xs={7}>
-                <Skills data={this.skills} />
+                <TechnicalSkills data={this.skills} />
+                <SkillsShowroom />
               </Col>
             </Row>
           </Grid>

@@ -42,4 +42,14 @@
       }
     }
   }
+
+  .skills-showcase {
+    .skills-showcase--container {
+      padding: 10px;
+    }
+    .icon {
+      font-size: 40px;
+      color: $teal;
+    }
+  }
 }
