@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "author": "kashyaprahul94@gmail.com",
   "main": "index.js",
   "repository": {
@@ -20,7 +20,6 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@blueprintjs/core": "^3.14.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
@@ -38,11 +37,5 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }

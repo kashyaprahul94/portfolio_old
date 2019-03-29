@@ -44,7 +44,11 @@ const init = () => {
         "GruntJS",
         "Babel",
         "Webpack",
-        "Bootstrap"
+        "Bootstrap",
+        "Handlebars.js",
+        "Mocha",
+        "Jest",
+        "Cypress"
       ],
       meter: 80
     })
@@ -55,7 +59,7 @@ const init = () => {
       category: "Mobile",
       items: [
         "Android",
-        "iOS ( Swift )",
+        "iOS",
         "Hybrid Apps ( ionic, Cordova )",
         "Progressive Web Apps"
       ],
@@ -89,7 +93,9 @@ const init = () => {
         "Functional & Reactive Programming",
         "Cloud Foundry",
         "Service Broker",
-        "CI/CD Pipelines"
+        "CI/CD",
+        "Docker",
+        "Kubernetes"
       ]
     })
   );

@@ -38,7 +38,7 @@ const init = () => {
   const commonInfo = {
     firstName: "Rahul",
     lastName: "Kashyap",
-    title: "Full Stack Developer",
+    title: "Full Stack Engineer",
     email: "kashyaprahul94@gmail.com",
     mobile: "+91 7503911679",
     country: "India",

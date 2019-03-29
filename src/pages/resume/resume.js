@@ -14,12 +14,14 @@ import personalData from "./data/personal";
 import experienceData from "./data/experience";
 import educationData from "./data/education";
 import skillsData from "./data/skills";
+import achievementsData from "./data/achievements";
 
 //
 import Header from "./header";
 import Experience from "./experience";
 import Education from "./education";
 import { TechnicalSkills, SkillsShowroom } from "./skills";
+import Achievements from "./achievements";
 
 //
 //
@@ -30,11 +32,23 @@ export default class extends Component {
     this.experiences = experienceData();
     this.educations = educationData();
     this.skills = skillsData();
+    this.achievements = achievementsData();
+
+    this.state = {
+      isFullScreen: false
+    };
   }
-  componentDidMount() {}
+  componentDidMount() {
+    if (window.localStorage.printMode) {
+      this.setState({
+        isFullScreen: true
+      });
+    }
+  }
+
   render() {
     return (
-      <div id="Resume">
+      <div id="Resume" className={this.state.isFullScreen ? "print-mode" : ""}>
         <Sheet>
           <Grid fluid>
             <Row>
@@ -50,6 +64,11 @@ export default class extends Component {
               <Col xs={7}>
                 <TechnicalSkills data={this.skills} />
                 <SkillsShowroom />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs>
+                <Achievements data={this.achievements} />
               </Col>
             </Row>
           </Grid>

@@ -5,7 +5,7 @@ import { Grid, Row, Col } from "components/grid";
 import {
   Icon,
   faAngular,
-  faLess,
+  faBootstrap,
   faSass,
   faReact,
   faHtml5,
@@ -23,8 +23,8 @@ const getSkillIcons = () => {
   return [
     faHtml5,
     faCss3Alt,
-    faLess,
     faSass,
+    faBootstrap,
     faJs,
     faAngular,
     faReact,

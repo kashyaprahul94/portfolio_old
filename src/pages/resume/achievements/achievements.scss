@@ -1,0 +1,20 @@
+@import "../../../styles/colors";
+
+.section-achievements {
+  .achievement-items {
+    margin-top: 10px;
+    .achievement-item {
+      .achievement-item--description {
+        font-family: "PT Sans Narrow", sans-serif !important;
+        margin: 0;
+        margin-bottom: 8px;
+        font-size: 18px;
+
+        .icon {
+          color: $teal;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
