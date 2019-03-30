@@ -15,6 +15,7 @@ import experienceData from "./data/experience";
 import educationData from "./data/education";
 import skillsData from "./data/skills";
 import achievementsData from "./data/achievements";
+import projectsData from "./data/projects";
 
 //
 import Header from "./header";
@@ -22,6 +23,7 @@ import Experience from "./experience";
 import Education from "./education";
 import { TechnicalSkills, SkillsShowroom } from "./skills";
 import Achievements from "./achievements";
+import { ProfessionalProjects, PersonalProjects } from "./projects";
 
 //
 //
@@ -33,6 +35,7 @@ export default class extends Component {
     this.educations = educationData();
     this.skills = skillsData();
     this.achievements = achievementsData();
+    this.projects = projectsData();
 
     this.state = {
       isFullScreen: false
@@ -69,6 +72,24 @@ export default class extends Component {
             <Row>
               <Col xs>
                 <Achievements data={this.achievements} />
+              </Col>
+            </Row>
+          </Grid>
+        </Sheet>
+        <Sheet>
+          <Grid fluid>
+            <Row>
+              <Col xs>
+                <ProfessionalProjects data={this.projects} />
+              </Col>
+            </Row>
+          </Grid>
+        </Sheet>
+        <Sheet>
+          <Grid fluid>
+            <Row>
+              <Col xs>
+                <PersonalProjects data={this.projects} />
               </Col>
             </Row>
           </Grid>

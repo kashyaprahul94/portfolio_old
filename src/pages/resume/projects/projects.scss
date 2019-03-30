@@ -1,0 +1,58 @@
+@import "../../../styles/colors";
+
+.section-projects {
+  .project-items {
+    margin-top: 10px;
+
+    .project-item {
+      margin-bottom: 10px;
+
+      p {
+        font-family: "Dosis", sans-serif !important;
+        margin: 0;
+      }
+
+      .project-item--title {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 900;
+
+        .icon {
+          color: $teal;
+          margin-right: 5px;
+        }
+
+        .employer {
+          margin-left: 5px;
+          font-size: 80%;
+          font-style: italic;
+          color: #5d5e5e;
+
+          &:before {
+            content: " - ";
+          }
+        }
+      }
+
+      .project-item--description {
+        margin-bottom: 8px;
+        color: #5d5e5e;
+        font-size: 15px;
+      }
+
+      .project-item--metadata {
+        margin-left: 50%;
+        text-align: right;
+        font-weight: 900;
+        font-size: 90%;
+
+        .role {
+          color: $teal;
+        }
+        .techs {
+          color: $teal;
+        }
+      }
+    }
+  }
+}
