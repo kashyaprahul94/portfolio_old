@@ -41,7 +41,7 @@ const SkillShowcase = ({ data }) => {
         <Row around="xs" className="skills-showcase--container">
           {data.length &&
             data.map(skillIcon => (
-              <Col key={MD5(skillIcon.iconName)}>
+              <Col key={MD5(skillIcon.iconName)} className="col">
                 <span className="icon">
                   <Icon icon={skillIcon} />
                 </span>
