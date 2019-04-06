@@ -186,7 +186,7 @@ const init = () => {
       employer: "Wunderflats GmbH",
       description: [
         "Wunderflats product serves as Housing as a Service solution which is composed of different building blocks, Frontend, Backend, Integration services etc; to name a few.",
-        "I joined as a Senior JavaScript Engineer and responsible to develop new features for the product, get involved in architecture related changes, to increase the productivity of the team."
+        "I joined as a Senior JavaScript Engineer and responsible to develop new features for the product, get involved in architecture related changes, to build tools & utilities which can increase the productivity of the teams."
       ],
       from: "Feb 2019",
       to: "Present",
@@ -211,16 +211,12 @@ const init = () => {
       type: ProjectType.Personal,
       title: "Pizza Ordering System",
       description: [
-        "This solution is created using MEN stack. This offers RESTful APIs written in TypeScript & Node.JS, which are capable of the whole Commerce related processes such as Customer, Inventory, Cart, Checkout, Order managements. This does not offer any UI but can be consumed through any REST client such as POSTMAN. This solution also mimics the Java counter part of Spring Data by implementing Document Repository for each kind of entity using TypeScript."
+        "I did this project as part of my academic assignment and thought of making it a scalable one.",
+        "This solution offers RESTful APIs written in TypeScript & Node.JS, which are capable of the whole Commerce related processes such as Customer, Inventory, Cart, Checkout, Order managements.",
+        "This solution also mimics the Java counter part of Spring Data by implementing Document Repository for each kind of entity using TypeScript.",
+        "This does not offer any UI but can be consumed through any REST client such as POSTMAN. "
       ],
-      techs: [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "RxJS",
-        "CloudFoundry",
-        "Redis"
-      ]
+      techs: ["JavaScript", "TypeScript", "Node.js", "RxJS", "Redis"]
     })
   );
 
@@ -229,7 +225,10 @@ const init = () => {
       type: ProjectType.Personal,
       title: "Smart Home",
       description: [
-        "This is an Ad-Hoc Smart IoT powered solution which can be used to control various equipments such as Bulb, Fridge, Fan etc using RESTful APIs, and integrate with Amazon Alexa. This can be used to create SDKs, that could have been given to the partners and customers to create their own implementation of centrally controlled equipments by various channels. To realize this usecase, I had created a Smart-Bulb, which I had made on my own using LEDs, Resistors and other things. The bulb can be operated with a Progressive Web Application for remote usage, and in-home usage with Voice based assistant such as Amazon Alexa."
+        "This project was done as my dissertation in Master degree.",
+        "I built an Ad-Hoc Smart IoT powered solution which can be used to control various equipments such as Bulb, Fridge, Fan etc using RESTful APIs, and integrate with Amazon Alexa. This can be used to create SDKs, that could have been given to the partners and customers to create their own implementation of centrally controlled equipments by various channels. To realize this usecase, I had created a Smart-Bulb, which I had made on my own using LEDs, Resistors and other things.",
+        "The bulb can be operated with a Progressive Web Application for remote usage, and in-home usage with Voice based assistant such as Amazon Alexa.",
+        "This project was well appreciated by BITS faculties and i was encouraged to record video lectures about the Architecture of the solution, working of it, and how one could initiate a project in IoT domain using JavaScript."
       ],
       techs: [
         "JavaScript",

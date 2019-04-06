@@ -28,9 +28,10 @@ const init = () => {
         "Express.js",
         "MongoDB",
         "GraphQL",
-        "RxJS"
+        "RxJS",
+        "Socket.IO"
       ],
-      meter: 90
+      meter: 85
     })
   );
 
@@ -50,7 +51,7 @@ const init = () => {
         "Jest",
         "Cypress"
       ],
-      meter: 80
+      meter: 75
     })
   );
 
@@ -90,10 +91,9 @@ const init = () => {
         "RESTful APIs & Micro-Services",
         "Design Patterns",
         "Scalable, Resilient & Distributed Systems",
-        "Internet of Things",
         "Functional & Reactive Programming",
-        "Cloud Foundry",
-        "Service Broker",
+        "Internet of Things",
+        "Open Service Broker",
         "CI/CD",
         "Docker",
         "Kubernetes"

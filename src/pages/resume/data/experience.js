@@ -41,7 +41,8 @@ const init = () => {
       city: "Berlin",
       country: "Germany",
       from: "Feb 2019",
-      description: "Started as Senior JavaScript Engineer.",
+      description:
+        "Started as Senior JavaScript Engineer & responsible for Full Stack Development.",
       logo: logoWF
     })
   );
