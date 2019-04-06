@@ -7,7 +7,8 @@ import {
   faEnvelope,
   faLinkedinIn,
   faGithubAlt,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faGlobeAsia
 } from "components/icons";
 
 //
@@ -54,7 +55,7 @@ const InfoItem = ({ icon, text }) => {
 };
 
 const Info = ({ data }) => {
-  const { mobile, email, gitHub, linkedIn } = data;
+  const { mobile, email, gitHub, linkedIn, website } = data;
   const location = Location(data);
   return (
     <div className="header-item--info">
@@ -78,6 +79,11 @@ const Info = ({ data }) => {
         <Col xs={4}>
           <InfoItem icon={faMapMarkerAlt} text={location} />
         </Col>
+        {!!website && (
+          <Col xs>
+            <InfoItem icon={faGlobeAsia} text={website} />
+          </Col>
+        )}
       </Row>
     </div>
   );

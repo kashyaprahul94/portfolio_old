@@ -30,10 +30,11 @@ const init = () => {
       from: "Aug 2014",
       to: "Jan 2019",
       description:
-        "Started as JavaScript Developer and grew up as Full Stack Developer & Cloud Architect.",
+        "Started as UI Developer and grew up as Full Stack Developer & Cloud Architect.",
       logo: logoSAP
     })
   );
+
   experiences.unshift(
     new Experience({
       company: "Wunderflats GmbH",

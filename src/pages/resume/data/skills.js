@@ -86,6 +86,7 @@ const init = () => {
       category: "Area of Interest",
       items: [
         "Cloud Architecture",
+        "Serverless Architecture",
         "RESTful APIs & Micro-Services",
         "Design Patterns",
         "Scalable, Resilient & Distributed Systems",
