@@ -23,7 +23,12 @@ import Experience from "./experience";
 import Education from "./education";
 import { TechnicalSkills, SkillsShowroom } from "./skills";
 import Achievements from "./achievements";
-import { ProfessionalProjects, PersonalProjects } from "./projects";
+import Projects from "./projects";
+
+//
+//
+
+const NUM_OF_PROJECTS_PER_PAGE = 5;
 
 //
 //
@@ -35,7 +40,38 @@ export default class extends Component {
     this.educations = educationData();
     this.skills = skillsData();
     this.achievements = achievementsData();
-    this.projects = projectsData();
+
+    const projects = projectsData();
+    const professionalProjects = projects.filter(
+      project => project.type === "PROFESSIONAL"
+    );
+    const personalProjects = projects.filter(
+      project => project.type === "PERSONAL"
+    );
+
+    this.projects = [];
+
+    for (const project of professionalProjects) {
+      if (
+        (this.projects[this.projects.length - 1 || 0] || []).length %
+          NUM_OF_PROJECTS_PER_PAGE ===
+        0
+      ) {
+        this.projects.push([]);
+      }
+      this.projects[this.projects.length - 1].push(project);
+    }
+
+    for (const project of personalProjects) {
+      if (
+        (this.projects[this.projects.length - 1 || 0] || []).length %
+          NUM_OF_PROJECTS_PER_PAGE ===
+        0
+      ) {
+        this.projects.push([]);
+      }
+      this.projects[this.projects.length - 1].push(project);
+    }
 
     this.state = {
       isFullScreen: false
@@ -76,24 +112,18 @@ export default class extends Component {
             </Row>
           </Grid>
         </Sheet>
-        <Sheet>
-          <Grid fluid>
-            <Row>
-              <Col xs>
-                <ProfessionalProjects data={this.projects} />
-              </Col>
-            </Row>
-          </Grid>
-        </Sheet>
-        <Sheet>
-          <Grid fluid>
-            <Row>
-              <Col xs>
-                <PersonalProjects data={this.projects} />
-              </Col>
-            </Row>
-          </Grid>
-        </Sheet>
+        {!!this.projects.length &&
+          this.projects.map((projectGroup, index) => (
+            <Sheet key={index}>
+              <Grid fluid>
+                <Row>
+                  <Col xs>
+                    <Projects data={projectGroup} hideTitle={index !== 0} />
+                  </Col>
+                </Row>
+              </Grid>
+            </Sheet>
+          ))}
       </div>
     );
   }

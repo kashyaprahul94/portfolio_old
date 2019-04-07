@@ -7,24 +7,39 @@ import { Card } from "components/card";
 import Professional from "./professional";
 import Personal from "./personal";
 
-export const ProfessionalProjects = ({ data }) => {
+const ProfessionalProjects = ({ data, hideTitle }) => {
   const projects = data.filter(project => project.type === "PROFESSIONAL");
   return (
-    <section className="section-projects">
-      <Card title="Professional Projects">
+    !!projects.length && (
+      <section className="projects-area">
+        <Card
+          title="Professional Projects"
+          transparent={true}
+          hideTitle={hideTitle}
+        />
         <Professional data={projects} />
-      </Card>
-    </section>
+      </section>
+    )
   );
 };
 
-export const PersonalProjects = ({ data }) => {
+const PersonalProjects = ({ data, hideTitle }) => {
   const projects = data.filter(project => project.type === "PERSONAL");
   return (
-    <section className="section-projects">
-      <Card title="Personal Projects">
+    !!projects.length && (
+      <section className="projects-area">
+        <Card title="Personal Projects" transparent={true} hideTitle={false} />
         <Personal data={projects} />
-      </Card>
+      </section>
+    )
+  );
+};
+
+export default ({ data, hideTitle }) => {
+  return (
+    <section className="section-projects">
+      <ProfessionalProjects data={data} hideTitle={hideTitle} />
+      <PersonalProjects data={data} hideTitle={hideTitle} />
     </section>
   );
 };

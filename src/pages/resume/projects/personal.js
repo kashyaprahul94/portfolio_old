@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, Row, Col } from "components/grid";
+import { Card } from "components/card";
 import { Icon, faCodeBranch, faStream } from "components/icons";
 
 //
@@ -54,16 +54,12 @@ const ProjectItem = ({ title, employer, description, role, techs }) => {
 
 const ProjectItems = ({ data }) => {
   return (
-    <Grid fluid>
-      {!!data.length &&
-        data.map(project => (
-          <Row key={project.id}>
-            <Col xs>
-              <ProjectItem {...project} />
-            </Col>
-          </Row>
-        ))}
-    </Grid>
+    !!data.length &&
+    data.map(project => (
+      <Card padding={true} key={project.id}>
+        <ProjectItem {...project} />
+      </Card>
+    ))
   );
 };
 
