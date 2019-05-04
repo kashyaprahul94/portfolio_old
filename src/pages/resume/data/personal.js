@@ -55,7 +55,7 @@ const init = () => {
     ...commonInfo,
     city: "Berlin",
     country: "Germany",
-    mobile: "+49 1521 0579203"
+    mobile: "+49 0175 3491806"
   });
 
   return infoGermanyBerlin;
